@@ -1,10 +1,11 @@
 import './App.css';
 
+//Import components / pages
+import Homepage from './pages/Homepage/Homepage';
+
 function App() {
   return (
-    <div className="bg-red-400">
-      <h1 className="text-blue-900 font-bold text-lg underline uppercase">Test</h1>
-    </div>
+    <Homepage />
   );
 }
 
