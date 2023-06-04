@@ -8,8 +8,8 @@ Authors: Ridho Daffasyah
 - [4] Penyusunan UI/UX yang rapi
 
 ## Screenshots
-![img](/assets/screenshot/screenshot-1.png)
-![img](/assets/screenshot/screenshot-2.png)
+![img](/public/assets/screenshot/screenshot-1.png)
+![img](/public/assets/screenshot/screenshot-2.png)
 
 ### `npm start`
 
