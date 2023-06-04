@@ -8,17 +8,15 @@ import Carousel from 'react-bootstrap/Carousel';
 import './index.css';
 
 //Import Data
-import { dataImg, dataVideo } from '../../utils/core'; 
-import { mergeData, getOneData, filterData } from '../../utils/core';
+import { getOneData, filterData } from '../../utils/core';
 
-const CarouselComponent = () => {
+const CarouselComponent = ({data}) => {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
 
-    const data = mergeData(dataImg, dataVideo);
     const dataAll = [];
     const dataOneNature = getOneData(filterData(data, "nature"));
     const dataOneSport = getOneData(filterData(data, "sport"));

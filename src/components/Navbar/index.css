@@ -27,3 +27,40 @@
 .nav-item {
   margin-right: 1rem;
 }
+
+@media (max-width: 1028px) {
+  .nav-link-top {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link-top {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: black;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link-top {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0rem;
+    color: black;
+  }
+}

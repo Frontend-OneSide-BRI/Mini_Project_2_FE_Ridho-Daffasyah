@@ -8,8 +8,9 @@ import './index.css';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import SearchComponent from '../Search';
 
-const NavbarComponent = () => {
+const NavbarComponent = ({isGallery}) => {
     return (
             <Navbar
                 bg="light"
@@ -26,7 +27,11 @@ const NavbarComponent = () => {
                             height="30"
                         />
                         Photosite
-                    </Navbar.Brand>
+                </Navbar.Brand>
+                {
+                    isGallery && <SearchComponent />
+
+                }
                     <div className="my-2">
                         <Nav>
                             <Nav.Item>

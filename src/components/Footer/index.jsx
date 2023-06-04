@@ -6,7 +6,7 @@ import './index.css';
 
 const Footer = () => {
     return (
-        <footer class="footer bg-light">
+        <footer className="footer bg-light">
             <div>&copy; Copyright 2023 Photosite</div>
         </footer>
     )

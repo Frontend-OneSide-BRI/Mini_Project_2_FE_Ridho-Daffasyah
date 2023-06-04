@@ -4,12 +4,14 @@ import React from 'react';
 import CarouselComponent from '../../components/Carousel';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import BestPhotos from '../../components/BestPhotos';
 
-const Homepage = () => {
+const Homepage = ({data}) => {
     return (
         <div className='h-screen'>
             <Navbar />
-            <CarouselComponent />
+            <CarouselComponent data={data} />
+            <BestPhotos data={data} />
             <Footer />
         </div>
     );
