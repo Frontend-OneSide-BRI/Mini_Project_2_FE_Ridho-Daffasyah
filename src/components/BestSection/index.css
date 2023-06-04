@@ -4,4 +4,5 @@
   color: #d2ab00;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px #cdc8c8;
+  text-transform: capitalize;
 }

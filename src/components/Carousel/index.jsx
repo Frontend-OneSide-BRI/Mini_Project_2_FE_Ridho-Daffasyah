@@ -7,6 +7,9 @@ import Carousel from 'react-bootstrap/Carousel';
 //Import CSS
 import './index.css';
 
+//Import Components
+import ButtonExplore from '../ButtonExplore';
+
 //Import Data
 import { getOneData, filterData } from '../../utils/core';
 
@@ -38,6 +41,7 @@ const CarouselComponent = ({data}) => {
                             <Carousel.Caption>
                                 <h1>{item.title}<span className="text-warning"> Photos!</span></h1>
                                 <p>{item.description}</p>
+                                <ButtonExplore />
                             </Carousel.Caption>
                         </Carousel.Item>
                     );
@@ -48,12 +52,14 @@ const CarouselComponent = ({data}) => {
                             <Carousel.Caption>
                                 <h1>{item.title}<span className="text-warning"> Photos!</span></h1>
                                 <p>{item.description}</p>
+                                <ButtonExplore />
                             </Carousel.Caption>
+                            
                         </Carousel.Item>
                     );
                 }
             })}
-            </Carousel>
+        </Carousel>
     );
 }
 

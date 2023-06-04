@@ -14,12 +14,13 @@
 }
 
 .active {
-  color: #d2ab00;
+  color: #d2ab00 !important;
   font-weight: bold;
 }
 
 .nav-link-top:hover {
-  color: white;
+  color: white !important;
+
   background-color: #d2ab00;
   border-radius: 5px;
 }

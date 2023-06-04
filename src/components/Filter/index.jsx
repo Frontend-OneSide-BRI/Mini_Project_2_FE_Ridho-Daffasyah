@@ -7,7 +7,7 @@ import './index.css';
 //Import Components
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import CardPhotos from '../CardPhotos';
+import CardGallery from '../CardGallery';
 
 const FilterComponent = ({ data, category }) => {
     return (
@@ -23,7 +23,17 @@ const FilterComponent = ({ data, category }) => {
                         return (
                             <Tab key={index} eventKey={item} title={item}>
                                 <Tab.Content>
-                                    <CardPhotos data={data} category={item} />
+                                    <Tab.Content>
+                                        <Tab.Pane
+                                            className="fade show active"
+                                            id={`nav-${category}`}
+                                            role="tabpanel"
+                                            aria-labelledby={`nav-${category}-tab`}
+                                            eventKey={category}
+                                        >
+                                            <CardGallery data={data} category={item} />
+                                        </Tab.Pane>
+                                    </Tab.Content>
                                 </Tab.Content>
                             </Tab>
                         )

@@ -8,9 +8,15 @@ import './index.css';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import SearchComponent from '../Search';
+import SearchComponent from '../SearchBar';
 
-const NavbarComponent = ({isGallery}) => {
+const NavbarComponent = ({
+    data,
+    isHomepage,
+    isGallery,
+    setSearchQuery,
+    handleSearch,
+}) => {
     return (
             <Navbar
                 bg="light"
@@ -19,7 +25,7 @@ const NavbarComponent = ({isGallery}) => {
                 <Container
                     className="px-2 flex flex-col sm:flex-row"
                 >
-                    <Navbar.Brand href="./index.html">
+                    <Navbar.Brand href="/">
                         <img
                             src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Photos-512.png"
                             alt="logo-photosite"
@@ -29,14 +35,14 @@ const NavbarComponent = ({isGallery}) => {
                         Photosite
                 </Navbar.Brand>
                 {
-                    isGallery && <SearchComponent />
+                    isGallery && <SearchComponent data={data} setSearchQuery={setSearchQuery} handleSearch={handleSearch}/>
 
                 }
                     <div className="my-2">
                         <Nav>
                             <Nav.Item>
                                 <Nav.Link
-                                    className="nav-link-top"
+                                    className={`${isHomepage ? "active" : ""} nav-link-top`}
                                     id="nav-home"
                                     aria-current="page"
                                     href="/"
@@ -46,9 +52,10 @@ const NavbarComponent = ({isGallery}) => {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link
-                                    className="nav-link-top"
+                                    className={`${isGallery ? "active" : ""} nav-link-top`}
                                     id="nav-gallery"
                                     target="_self"
+                                    href="/gallery"
                             >
                                 Gallery
                                 </Nav.Link>

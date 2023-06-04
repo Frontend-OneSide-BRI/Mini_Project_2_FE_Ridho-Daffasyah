@@ -5,12 +5,12 @@ import React from 'react';
 import "./index.css";
 
 //Import Component
-import CardBestPhotos from '../CardBestPhotos';
+import CardGallery from '../CardGallery';
 
 //Import js
 import { filterData } from '../../utils/core';
 
-const BestPhotos = ({data}) => {
+const BestSection = ({data, isBest}) => {
     const bestCategory = ["nature", "sport", "cartoon"];
 
     return (
@@ -23,7 +23,7 @@ const BestPhotos = ({data}) => {
                         <div key={index}>
                             <h1 className="title-best">Best {category}</h1>
                             <div id={`best-${category}`}>
-                                <CardBestPhotos data={filteredData} />
+                                <CardGallery data={filteredData} isBest={isBest} />
                             </div>
                         </div>
                     )
@@ -33,4 +33,4 @@ const BestPhotos = ({data}) => {
     )
 }
 
-export default BestPhotos;
+export default BestSection;
