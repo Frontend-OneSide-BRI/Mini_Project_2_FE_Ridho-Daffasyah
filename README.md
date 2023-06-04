@@ -2,10 +2,10 @@
 Authors: Ridho Daffasyah
 ## Requirements
 
-- [1] Penggunaan Responsive Layout
-- [2] Penggunaan Elements: Card, Carousel, Button, Navbar, Modal
-- [3] Penggunaan hyperlink untuk navigasi antar halaman (min 2 halaman)
-- [4] Penyusunan UI/UX yang rapi
+[1] Penggunaan Responsive Layout
+[2] Penggunaan Elements: Card, Carousel, Button, Navbar, Modal
+[3] Penggunaan hyperlink untuk navigasi antar halaman (min 2 halaman)
+[4] Penyusunan UI/UX yang rapi
 
 ## Screenshots
 ![img](/public/assets/screenshot/screenshot-1.png)
